@@ -13,7 +13,7 @@ vim.opt.rtp:prepend(lazypath)
 
 local plugins = {
     "nvim-telescope/telescope.nvim",
-    "folke/tokyonight.nvim",
+    -- "folke/tokyonight.nvim",
     "nvim-treesitter/nvim-treesitter",
     "nvim-treesitter/playground",
     "theprimeagen/harpoon",
@@ -26,6 +26,11 @@ local plugins = {
     {'hrsh7th/cmp-nvim-lsp'},
     {'hrsh7th/nvim-cmp'},
     {'L3MON4D3/LuaSnip'},
+    {
+        "scottmckendry/cyberdream.nvim", 
+        lazy = false, 
+        priority = 1000  
+    },
     "nvim-lua/plenary.nvim"
 }
 
