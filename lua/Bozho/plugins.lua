@@ -31,7 +31,8 @@ local plugins = {
         lazy = false, 
         priority = 1000  
     },
-    "nvim-lua/plenary.nvim"
+    "nvim-lua/plenary.nvim",
+    "j-hui/fidget.nvim"
 }
 
 require("lazy").setup(plugins, opts)
