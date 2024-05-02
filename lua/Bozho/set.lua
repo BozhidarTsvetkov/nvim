@@ -1,3 +1,5 @@
+vim.api.nvim_set_option("clipboard", "unnamedplus")
+
 vim.opt.guicursor = ""
 
 vim.opt.nu = true
