@@ -33,3 +33,4 @@ vim.opt.colorcolumn = "120"
 
 vim.g.mapleader = " "
 
+vim.g.netrw_bufsettings = "noma nomod nonu nobl nowrap ro"
