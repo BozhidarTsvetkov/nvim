@@ -91,67 +91,67 @@ local plugins = {
         require("metals").setup_dap()
 
         -- LSP mappings
-        map("n", "gds", vim.lsp.buf.document_symbol)
-        map("n", "gws", vim.lsp.buf.workspace_symbol)
-        map("n", "<leader>cl", vim.lsp.codelens.run)
-        map("n", "<leader>ff", vim.lsp.buf.format)
-        map("n", "<leader>ca", vim.lsp.buf.code_action)
+        vim.keymap.set("n", "gds", vim.lsp.buf.document_symbol)
+        vim.keymap.set("n", "gws", vim.lsp.buf.workspace_symbol)
+        vim.keymap.set("n", "<leader>cl", vim.lsp.codelens.run)
+        vim.keymap.set("n", "<leader>ff", vim.lsp.buf.format)
+        vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action)
 
-        map("n", "<leader>ws", function()
+        vim.keymap.set("n", "<leader>ws", function()
           require("metals").hover_worksheet()
         end)
 
         -- all workspace diagnostics
-        map("n", "<leader>aa", vim.diagnostic.setqflist)
+        vim.keymap.set("n", "<leader>aa", vim.diagnostic.setqflist)
 
         -- all workspace errors
-        map("n", "<leader>ae", function()
+        vim.keymap.set("n", "<leader>ae", function()
           vim.diagnostic.setqflist({ severity = "E" })
         end)
 
         -- all workspace warnings
-        map("n", "<leader>aw", function()
+        vim.keymap.set("n", "<leader>aw", function()
           vim.diagnostic.setqflist({ severity = "W" })
         end)
 
         -- buffer diagnostics only
-        map("n", "<leader>d", vim.diagnostic.setloclist)
+        vim.keymap.set("n", "<leader>d", vim.diagnostic.setloclist)
 
-        map("n", "[d", function()
+        vim.keymap.set("n", "[d", function()
           vim.diagnostic.goto_prev({ wrap = false })
         end)
 
-        map("n", "]d", function()
+        vim.keymap.set("n", "]d", function()
           vim.diagnostic.goto_next({ wrap = false })
         end)
 
         -- Example mappings for usage with nvim-dap. If you don't use that, you can
         -- skip these
-        map("n", "<leader>dc", function()
+        vim.keymap.set("n", "<leader>dc", function()
           require("dap").continue()
         end)
 
-        map("n", "<leader>dr", function()
+        vim.keymap.set("n", "<leader>dr", function()
           require("dap").repl.toggle()
         end)
 
-        map("n", "<leader>dK", function()
+        vim.keymap.set("n", "<leader>dK", function()
           require("dap.ui.widgets").hover()
         end)
 
-        map("n", "<leader>dt", function()
+        vim.keymap.set("n", "<leader>dt", function()
           require("dap").toggle_breakpoint()
         end)
 
-        map("n", "<leader>dso", function()
+        vim.keymap.set("n", "<leader>dso", function()
           require("dap").step_over()
         end)
 
-        map("n", "<leader>dsi", function()
+        vim.keymap.set("n", "<leader>dsi", function()
           require("dap").step_into()
         end)
 
-        map("n", "<leader>dl", function()
+        vim.keymap.set("n", "<leader>dl", function()
           require("dap").run_last()
         end)
       end
