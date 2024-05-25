@@ -1,5 +1,4 @@
 vim.g.mapleader = " "
-vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
@@ -37,3 +36,9 @@ vim.keymap.set({ "n" }, "<Up>", "<C-w>k")
 vim.keymap.set({ "n" }, "<Left>", "<C-w>h")
 vim.keymap.set({ "n" }, "<Right>", "<C-w>l")
 
+
+-- These mappings control the size of splits (height/width)
+vim.keymap.set("n", "<C-A-m>", "<c-w>5<")
+vim.keymap.set("n", "<C-A-/>", "<c-w>5>")
+vim.keymap.set("n", "<C-A-.>", "<C-W>+")
+vim.keymap.set("n", "<C-A-,>", "<C-W>-")
