@@ -23,7 +23,8 @@ local cmp = require('cmp')
 
 cmp.setup({
   sources = {
-    {name = 'nvim_lsp'},
+    { name = 'nvim_lsp'},
+    { name = "buffer", keyword_length = 2 }, -- for buffer word completion
   },
   mapping = {
     ['<C-y>'] = cmp.mapping.confirm({select = false}),
@@ -39,7 +40,7 @@ cmp.setup({
 })
 
 lsp.set_preferences({
-    suggest_lsp_servers = false,
+    suggest_lsp_servers = true,
     sign_icons = {
         error = 'E',
         warn = 'W',
