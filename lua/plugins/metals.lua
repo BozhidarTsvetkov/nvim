@@ -51,6 +51,8 @@ return {
       -- Example if you are using cmp how to make sure the correct capabilities for snippets are set
       metals_config.capabilities = require("cmp_nvim_lsp").default_capabilities()
 
+      -- Bozho to be deleted
+      --[[
       metals_config.on_attach = function(client, bufnr)
         require("metals").setup_dap()
 
@@ -118,7 +120,7 @@ return {
         vim.keymap.set("n", "<leader>dl", function()
           require("dap").run_last()
         end)
-      end
+      end--]]
 
       return metals_config
     end,

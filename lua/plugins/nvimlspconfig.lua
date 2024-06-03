@@ -1,5 +1,13 @@
 return {
     "neovim/nvim-lspconfig",
-    config = function ()
-    end
+    dependencies = {
+      "williamboman/mason.nvim",
+      "williamboman/mason-lspconfig.nvim",
+      "WhoIsSethDaniel/mason-tool-installer.nvim",
+
+      { "j-hui/fidget.nvim", opts = {} },
+
+      -- Autoformatting
+      "stevearc/conform.nvim",
+    }
 }
