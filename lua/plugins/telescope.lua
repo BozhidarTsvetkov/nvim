@@ -1,6 +1,6 @@
 return {
     "nvim-telescope/telescope.nvim",
-    config = function () 
+    config = function()
         require("telescope").setup {
             defaults = {
                 layout_strategy = 'horizontal',
@@ -20,25 +20,25 @@ return {
                     },
 
                     vertical = {
-                    width = 0.9,
-                    height = 0.95,
-                    preview_height = 0.5,
-                   },
+                        width = 0.9,
+                        height = 0.95,
+                        preview_height = 0.5,
+                    },
 
                     flex = {
-                    horizontal = {
-                        preview_width = 0.9,
+                        horizontal = {
+                            preview_width = 0.9,
+                        },
                     },
-                  },
                 },
-                
+
                 path_display = {
                     "filename_first"
                 },
 
                 file_previewer = require("telescope.previewers").vim_buffer_cat.new,
                 grep_previewer = require("telescope.previewers").vim_buffer_vimgrep.new,
-                qflist_previewer = require("telescope.previewers").vim_buffer_qflist.new    
+                qflist_previewer = require("telescope.previewers").vim_buffer_qflist.new
             }
         }
     end
