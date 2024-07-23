@@ -3,7 +3,7 @@ require "Bozho.remap"
 -- a must: https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md
 
 -- Native LSP Setup
-vim.lsp.set_log_level("debug")
+vim.lsp.set_log_level("warn")
 
 -- Global setup.
 local cmp = require 'cmp'
