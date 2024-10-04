@@ -97,13 +97,6 @@ local servers = {
             "rustup", "run", "stable", "rust-analyzer",
         }
     },
-    jdtls = {
-        filetypes = { "java" },
-    },
-    --[[jedi_language_server = {
-        filetypes = { "python" },
-        single_file_support = true,
-    },--]]
     ltex = {
         diagnostics = { disable = { 'missing-fields' } },
         settings = {
