@@ -130,6 +130,9 @@ local servers = {
     kotlin_language_server = {
         filetypes = { "kotlin" },
     },
+    typescript_language_server = {
+        filetypes = { "typescript", "javascript", "javascriptreact", "typescriptreact", "typescript.tsx" },
+    },
     lua_ls = {
         single_file_support = true,
         filetypes = { "lua" },
@@ -150,10 +153,7 @@ local servers = {
     }
 }
 
-local ensureinstalled = vim.tbl_keys(servers)
-
 require('mason-lspconfig').setup {
-    ensure_installed = ensureinstalled,
     handlers = {
         function(server_name)
             local server = servers[server_name] or {}
