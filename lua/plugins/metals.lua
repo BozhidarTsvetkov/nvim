@@ -61,11 +61,13 @@ return {
             vim.keymap.set("n", "K", "<cmd>Lspsaga hover_doc<CR>")
             vim.keymap.set("n", "<leader>li", "<cmd>Telescope lsp_implementations<CR>")
             vim.keymap.set("n", "<leader>lr", "<cmd>lua vim.lsp.buf.rename()<CR>")
+            -- TODO Bozho codelens doesn't work for running tests; fix it
             vim.keymap.set("n", "<leader>cl", "<cmd>lua vim.lsp.codelens.run()<CR>")
             vim.keymap.set("n", "<leader>fm", "<cmd>lua vim.lsp.buf.format()<CR>")
             vim.keymap.set("n", "<leader>la", "<cmd>lua vim.lsp.buf.code_action()<CR>")
             vim.keymap.set("n", "<leader>lh", "<cmd>lua vim.lsp.buf.signature_help()<CR>")
             vim.keymap.set("n", "<leader>lf", "<cmd>Telescope lsp_references<CR>")
+            vim.keymap.set("n", "<leader>lu", "<cmd>MetalsGotoSuperMethod<CR>")
 
             vim.keymap.set("n", "<leader>ws", function()
                 require("metals").hover_worksheet()

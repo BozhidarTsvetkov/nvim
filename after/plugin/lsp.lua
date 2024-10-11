@@ -58,6 +58,7 @@ local on_attach = function(client, bufnr)
     nmap { "<leader>li", "<cmd>Telescope lsp_implementations<CR>", opts }
     nmap { "<leader>D", "<cmd>Telescope lsp_type_definitions<CR>", opts }
     nmap { "<leader>lr", "<cmd>lua vim.lsp.buf.rename()<CR>", opts }
+    nmap { "<leader>cl", "<cmd>lua vim.lsp.codelens.run()<CR>", opts }
     nmap { "<leader>la", "<cmd>lua vim.lsp.buf.code_action()<CR>", opts }
     nmap { "<leader>lD", "<cmd>lua vim.lsp.buf.type_definition()<CR>", opts }
     nmap { "<leader>fm", "<cmd>lua vim.lsp.buf.format()<CR>", opts }
