@@ -128,8 +128,8 @@ local servers = {
         filetypes = { "go", "gomod", "gowork", "gotmpl" },
     },
     golangci_lint_ls = {},
-    kotlin_language_server = {
-        filetypes = { "kotlin" },
+    jdtls = {
+        filetypes = { "java" },
     },
     typescript_language_server = {
         filetypes = { "typescript", "javascript", "javascriptreact", "typescriptreact", "typescript.tsx" },
