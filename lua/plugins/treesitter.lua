@@ -18,7 +18,11 @@ return {
                     "typescript",
                     "javascript",
                     "scala",
-                    "vim"
+                    "vim",
+                    "html",
+                    "latex",
+                    "markdown",
+                    "markdown_inline"
                 },
             }
         end
